@@ -3,13 +3,12 @@
 
 def random
   result = [true, false].sample
-  puts result
 end
 
-if random == true
+#No requiere denotar si es True, se sub-entiende. El elsif da una condición que no existe
+
+if random
   puts 'sí'
-elsif random == false
-  puts 'no'
 else
-  puts 'error'
+  puts 'no'
 end
