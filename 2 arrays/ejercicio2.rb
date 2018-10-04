@@ -24,3 +24,10 @@ class Array #Para agregar métodos a la clase Array
 end
 puts a.take_middle
 print a
+class Array
+    def take_lastifnot1
+        self.last != 1 ? self.delete_at(self.length-1) : nil 
+    end
+end
+a.take_lastifnot1
+print a
