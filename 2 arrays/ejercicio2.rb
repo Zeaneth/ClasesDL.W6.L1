@@ -31,3 +31,9 @@ class Array
 end
 a.take_lastifnot1
 print a
+
+
+b = []
+a.length.times {b.push(a.pop)}
+print a
+print b
