@@ -10,3 +10,17 @@
 #    invertir el orden de los elementos en un arreglo.
 
 a = [1,2,3,9,1,4,5,2,3,6,6]
+#Fuente: https://ruby-doc.org/core-2.2.2/Array.html#method-i-delete
+puts a.pop
+print a
+puts a.shift
+print a
+puts a.length
+#Fuente: https://stackoverflow.com/questions/26877729/find-the-2nd-element-of-array
+class Array #Para agregar métodos a la clase Array
+    def take_middle
+       self.length%2 == 0 ? self.delete_at(self.length/2) : self.delete_at(self.length/2+0.5)
+    end        
+end
+puts a.take_middle
+print a
