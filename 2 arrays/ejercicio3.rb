@@ -5,3 +5,28 @@
  # 4. Crear un método que incrementa todos los elementos en una unidad y devuelva un arreglo nuevo.
 
 a = [1,2,3,9,1,4,5,2,3,6,6]
+a.keep_if{ |x| x.even?}
+print a
+
+suma = 0
+a.each { |x| suma += x}
+puts suma
+
+
+def promedio()
+    a = [1,2,3,9,1,4,5,2,3,6,6]
+    suma = 0
+    a.each { |x| suma += x}
+    puts (suma).to_f/(a.length).to_f
+end
+
+promedio
+
+# Fuente = https://docs.ruby-lang.org/en/2.0.0/Array.html (seccion map!)
+def suma1
+    a = [1,2,3,9,1,4,5,2,3,6,6]
+    a.map! { |x| (x + 1) }
+    print a
+end
+
+suma1
