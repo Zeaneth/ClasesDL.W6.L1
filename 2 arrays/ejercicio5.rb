@@ -4,13 +4,18 @@
 # <div class='product'><p> Producto3 </p><p> Precio: 1500 </p></div>
 # <div class='product'><p> Producto4 </p><p> Precio: 950 </p></div>
 
-products = %w(Producto1 Producto2 Producto3 Producto4)
-prices = %w[1000 2000 1500 950]
+$html = ''
+$html2 = ''
+$products = %w(Producto1 Producto2 Producto3 Producto4)
+$prices = %w[1000 2000 1500 950]
 
-html = ''
-products.each do |i|
-  html += "<div class='product'>"
-  html += "</div>\n"
-end
-
-puts html
+$products.each do |i|
+  #  html += "<div class='product'>"
+  #$html += "#{$products.at($products.index(i))}\n"
+  #  html += "</div>\n"
+  #  puts $html
+  $price_index = $products.index($products.at($products.index(i)))
+  $product_index = $products.at($products.index(i))
+   
+  puts "<div class='product'>" + "<p> " + $product_index  + " </p>" + "<p> Precio: " + $prices[$price_index] + " </p>" + "</div>"
+  end

@@ -5,3 +5,9 @@
 
 cadena = 'Hola Mundo!'
 caracter = 'o'
+def pregunta
+  a = [cadena, caracter]
+  puts a.include?(caracter)
+end
+
+pregunta
