@@ -3,11 +3,11 @@
 # hint: El método .include? de un string busca si un caracter
 # o string dado está contenido en éste.
 
-cadena = 'Hola Mundo!'
-caracter = 'o'
+$cadena = 'Hola Mundo!'
+$caracter = 'o'
 def pregunta
-  a = [cadena, caracter]
-  puts a.include?(caracter)
+  a = $cadena
+  puts a.include?($caracter)
 end
 
 pregunta
