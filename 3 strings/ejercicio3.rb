@@ -6,3 +6,8 @@
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+
+print a + b
+print (a + b).uniq
+print a & b
+print a.product(b)
